@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  .font-literary {
+    font-family: 'Lora', Georgia, serif;
+  }
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+  .font-typewriter {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+@keyframes flameWiggle {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.9));
+  }
+  50% {
+    transform: scale(1.08, 0.94) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 1));
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes softTwinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes catTailWag {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+@keyframes catEarTwitch {
+  0%, 90%, 100% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-6deg);
+  }
+}
+
+.animate-flame {
+  animation: flameWiggle 1.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: softTwinkle 2.5s ease-in-out infinite;
+}
+
+.animate-tail {
+  animation: catTailWag 3.2s ease-in-out infinite;
+  transform-origin: bottom left;
+}
+
+.animate-ear {
+  animation: catEarTwitch 4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Custom manuscript paper texture */
+.paper-texture {
+  background-color: #FAF6EE;
+  background-image: radial-gradient(#d6cdbe 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Manga screentone effect */
+.manga-dots {
+  background-image: radial-gradient(#27272a 1px, transparent 1px);
+  background-size: 10px 10px;
+}

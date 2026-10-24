@@ -1,0 +1,6 @@
+{
+  "name": "A Little Universe for Fitria Salsa Bela",
+  "description": "Sebuah website kado ulang tahun digital personal, puitis, dan interaktif untuk Fitria Salsa Bela.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
